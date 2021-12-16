@@ -1,4 +1,4 @@
-function soundbell(n)
+function sound(n)
 {
   // 対象となるID名
   var id = 'sound-'+n ;
