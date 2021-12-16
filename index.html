@@ -37,6 +37,19 @@
     <source src="http://idotdesign.net/wp-content/themes/idotdesign/sound/sound.wav" type="audio/wav">
 </audio>
 
+<!-- ボタンの設置 -->
+<input type="button" value="再生" onclick="ring()">
+<!-- 音声ファイルの読み込み -->
+<audio id="tts">
+  <source src= "audio/1.mp3" type="audio/mp3">
+</audio>
+
+<script type="text/javascript">
+	function ring(){
+	  document.getElementById("tts").load();
+	  document.getElementById("tts").play();
+	}
+</script>
 
 <HR style="margin: 3em 0 ;">
 
