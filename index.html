@@ -5,6 +5,21 @@
 		<meta name="robots" content="noindex,nofollow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Kinoko's Sampler</title>
+
+		<script>
+			function soundbell(n)
+			{
+			  // 割り当てるID名（引数のnを連結して指定）
+			  var id = 'sound-'+n ;
+			  // 初回の再生以外だったら音声ファイルの再生ポイントを先頭にしておく
+			  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' )
+			  {
+				document.getElementById( id ).currentTime = 0;
+			  }
+			  // [ID:sound-file]の音声ファイルを再生[play()]する
+			  document.getElementById( id ).play() ;
+			}
+		</script>
 	</head>
 <body>
 
@@ -33,20 +48,6 @@
 
 <HR style="margin: 3em 0 ;">
 
-<script>
-function soundbell(n)
-{
-  // 割り当てるID名（引数のnを連結して指定）
-  var id = 'sound-'+n ;
-  // 初回の再生以外だったら音声ファイルの再生ポイントを先頭にしておく
-  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' )
-  {
-    document.getElementById( id ).currentTime = 0;
-  }
-  // [ID:sound-file]の音声ファイルを再生[play()]する
-  document.getElementById( id ).play() ;
-}
-</script>
 
 
 
