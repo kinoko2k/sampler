@@ -39,10 +39,10 @@ for(var i = 0; i < bottunNum;i++){
 
 koukaon_div.addEventListener('click',function(){　　//効果音ボタンが押されたとき
 
-    bgm_flag = 0; 
+    bgm_flag = 1; 
 
     ctx.clearRect (0,0,width,height);  
-    ctx.fillText('効果音',100,100,100); 
+    //ctx.fillText('効果音',100,100,100); 
     
 })
 
