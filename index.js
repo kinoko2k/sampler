@@ -61,7 +61,7 @@ function chose_music(bgm_flag,i){
     if(bgm_flag){
 
         koukaon[i].pause();　　//効果音を止める
-        //bgm[i].play();　　//bgmを再生
+        bgm[i].play();　　//bgmを再生
 
         var playPromise = bgm[i].play();
 
