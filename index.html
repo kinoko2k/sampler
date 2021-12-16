@@ -5,22 +5,56 @@
 		<meta name="robots" content="noindex,nofollow">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<title>Kinoko's Sampler</title>
-		<script src="../common/js/jquery-1.11.0.min.js"></script>
-		<script>
-			function soundbell(n)
-			{
-			  // 割り当てるID名（引数のnを連結して指定）
-			  var id = 'sound-'+n ;
-			  // 初回の再生以外だったら音声ファイルの再生ポイントを先頭にしておく
-			  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' )
-			  {
-				document.getElementById( id ).currentTime = 0;
-			  }
-			  // [ID:sound-file]の音声ファイルを再生[play()]する
-			  document.getElementById( id ).play() ;
-			}
-		</script>
-	</head>
+<script src="../common/js/jquery-1.11.0.min.js"></script>
+<script>
+function soundbell(n)
+{
+  // 対象となるID名
+  var id = 'sound-'+n ;
+  // 初回以外だったら音声ファイルを巻き戻す
+  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' )
+  {
+    document.getElementById( id ).currentTime = 0;
+  }
+  // [ID:sound-file]の音声ファイルを再生[play()]する
+  document.getElementById( id ).play() ;
+}
+
+</script>
+
+<style>
+body{
+margin:20px;
+text-align: center;
+background-color:#11AA78;
+}
+h1{
+	font-weight:normal;
+	font-size:20px;
+	color:#fff;
+}
+.wrap{
+	max-width: 375px;
+	margin:auto;
+}
+</style>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-1170681-2"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-1170681-2');
+</script>
+<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+<script>
+  (adsbygoogle = window.adsbygoogle || []).push({
+    google_ad_client: "ca-pub-1014165100755380",
+    enable_page_level_ads: true
+  });
+</script>
+</head>
 <body>
 
 <h1 style="">Kinoko Samplerrrrrrrrrrrrr</h1>
