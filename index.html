@@ -16,7 +16,7 @@
 <HR style="margin: 3em 0 ;">
 <p><a onClick="sound();"><img src="./スクリーンショット 2021-12-10 143831.png" width="280" height="80" alt="クリックすると音" title="音ON！"></a></p>
 
-<audio id="sound-file" preload="auto">
+<audio id="sound-1" preload="auto">
 	<source src="./0.mp3" type="audio/mp3">
 	<source src="./0.wav" type="audio/wav">
 </audio>
@@ -25,7 +25,7 @@
 	<p>血飛沫の音</p>
 	<p><a onClick="sound();"><img src="./スクリーンショット 2021-12-10 143831.png" width="280" height="80" alt="クリックすると音" title="音ON！"></a></p>
 	
-<audio id="sound-file1" preload="auto">
+<audio id="sound-2" preload="auto">
 		<source src="./1.mp3" type="audio/mp3">
 		<source src="./1.wav" type="audio/wav">
 </audio>
@@ -33,7 +33,21 @@
 
 <HR style="margin: 3em 0 ;">
 
-<script src="sounds.js"></script>
+<script>
+function soundbell(n)
+{
+  // 対象となるID名
+  var id = 'sound-'+n ;
+  // 初回以外だったら音声ファイルを巻き戻す
+  if( typeof( document.getElementById( id ).currentTime ) != 'undefined' )
+  {
+    document.getElementById( id ).currentTime = 0;
+  }
+  // [ID:sound-file]の音声ファイルを再生[play()]する
+  document.getElementById( id ).play() ;
+}
+
+</script>
 
 
 
