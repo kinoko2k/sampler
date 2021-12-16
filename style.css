@@ -48,7 +48,7 @@ img{
 
 .music:hover{
     cursor: pointer;
-    background: #5555bb;;
+    background: #3fcf6b;;
 } 
 
 .choice{
@@ -63,7 +63,7 @@ img{
     
 .choice:hover{
         cursor: pointer;
-        background:rgb(18, 89, 197);
+        background:rgb(131, 18, 197);
 } 
 
 #gameScreen{
