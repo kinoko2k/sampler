@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Sampler</title>
+	<style>
+		body {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			align-items: center;
+			height: 100vh;
+			background-color: #f0f0f0;
+		}
+		
+		button {
+			font-size: 24px;
+			padding: 10px 20px;
+			margin: 10px;
+			background-color: #3498db;
+			border: none;
+			color: white;
+			border-radius: 5px;
+			box-shadow: 0px 3px 0px #2980b9;
+			cursor: pointer;
+		}
+		
+		button:hover {
+			background-color: #2980b9;
+		}
+		
+		button:active {
+			box-shadow: none;
+			transform: translateY(3px);
+		}
+		
+		#sound1 {
+			display: none;
+		}
+	</style>
+</head>
+<body>
+	<audio id="sound1" src="音声URL.mp3"></audio>
+    <audio id="sound2" src="音声URL.mp3"></audio>
+    <audio id="sound3" src="音声URL.mp3"></audio>
+    <audio id="sound4" src="音声URL.mp3"></audio>
+	<button onclick="document.getElementById('sound1').play()">音1</button>
+	<button onclick="document.getElementById('sound2').play()">音2</button>
+	<button onclick="document.getElementById('sound3').play()">音3</button>
+	<button onclick="document.getElementById('sound4').play()">音4</button>
+</body>
+</html>
